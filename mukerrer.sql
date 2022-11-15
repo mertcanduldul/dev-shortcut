@@ -1,0 +1,5 @@
+SELECT A.SearchID, COUNT(A.SearchID), MIN(A.WantedID) FROM XXDB (NOLOCK) AS E
+WHERE Condition
+GROUP BY A.SearchID
+HAVING COUNT(A.SearchID)>1
+ORDER BY A.SearchID
