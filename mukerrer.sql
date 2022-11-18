@@ -47,3 +47,13 @@ SELECT 1 FROM msdb.dbo.sysjobsteps AS s
 WHERE s.job_id = j.job_id
 AND s.command LIKE '%%'
 );
+
+TABLO ARAMA
+----------------------------------------------------------
+SELECT * FROM sys.tables t WHERE t.name LIKE 'TABLO_aDI%'
+
+KOLON ARAMA
+---------------------------------------------------------
+SELECT COLUMN_NAME,
+TABLE_NAME FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME LIKE 'KOLON_ADI'
